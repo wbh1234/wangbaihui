@@ -3,6 +3,9 @@
     padding:0;
     text-decoration: none;
 }
+body{
+    position: relative;
+}
 li{
     list-style: none;
 }
