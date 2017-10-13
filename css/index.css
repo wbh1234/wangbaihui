@@ -1,15 +1,11 @@
 #background{
     width: 100%;
-    height:700px;
+    height:483px;
     position: relative;
 }
 #background_img img{
     width: 100%;
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*left: 0;*/
-    /*bottom: 0;*/
+    height: 100%;
     float: left;
     display: none;
 }
@@ -18,46 +14,71 @@
 }
 #background_list{
     position: absolute;
-    left: 150px;
-    bottom:100px;
+    left: 90px;
+    bottom:75px;
 }
 #background_list li{
-    width: 50px;
-    height: 5px;
-    background:gainsboro;
+    width:30px;
+    height:3px;
+    background:gainsboro ;
+    opacity: 0.8;
     float: left;
-    margin-left:10px;
+    margin-left:5px;
     cursor: pointer;
 
 }
 #background_list .selected{
-    background:orange;
+    background:darkred;
 }
 #background_sorrn{
     position: absolute;
-    right: 150px;
-    bottom: 100px;
+    right: 100px;
+    bottom: 75px;
 }
 #background_sorrn #prev,#background_sorrn #next{
     display: inline-block;
     margin-right:10px;
-    width: 50px;
-    height: 50px;
-    background:orange;
+    width: 35px;
+    border-radius: 5px;
+    height: 35px;
+    background:darkred;
     text-align: center;
-    color: white;
-    line-height: 50px;
+    color:gray;
+    line-height:35px;
     cursor: pointer;
 }
-#nav #logo_one{
-    display: inline-block;
-    background:url("../img/logol1.jpg")center no-repeat;
-    width: 100px;
-    height: 100px;
+#nav{
+    background:darkgreen;
+    border:solid 1px darkgreen;
+    border-radius: 5px;
+    position:fixed;
+    width: 40%;
+    top: 0;
+    left: 0;
+}
+#nav #logol_one{
+    float: left;
+    /*background:url("../img/logol1.jpg")center no-repeat;*/
+    width: 80%;
+    border-radius:5px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    background:darkgreen;
 }
 #nav #logol_two{
-    display: inline-block;
-    width: 300px;
-    height: 100px;
-    background: orange;
+    float: left;
+    width:12%;
+    margin-top:10px;
+    border-radius:5px;
+    border:solid 1px darkgrey;
+    height: 30px;
+    background:darkred;
+}
+#nav .menu{
+    z-index: 10;
+    display: block;
+    width: 20px;
+    height: 5px;
+    color:yellow;
 }
