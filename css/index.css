@@ -147,4 +147,79 @@
 #content{
     width: 60%;
     float: right;
+    background:gainsboro;
+    border-bottom:solid 2px darkred;
+
+}
+#content #content_word{
+    line-height:45px;
+    float: left;
+}
+#content_word .htll{
+    display: inline-block;
+    margin-top:6px;
+    margin-left:6px;
+    color: darkgrey;
+    width:120px;
+    background:darkred;
+}
+#content_word .htll2{
+    display: block;
+    width: 0;
+    margin-left:110px;
+    border-top:solid 8px darkred;
+    border-right:solid 8px darkred;
+    border-left:solid 8px gainsboro;
+    border-bottom:solid 8px gainsboro;
+}
+#content_word h1{
+    display: block;
+    width: 180px;
+    margin-left:30px;
+    line-height:40px;
+    border-bottom:solid 3px darkgreen;
+    /*border-top:solid 8px yellow;*/
+}
+#content_word #photo{
+    width: 220px;
+    height: 300px;
+    background:url("../img/lalla.jpg") center no-repeat;
+    background-size: contain;
+    margin-left:30px;
+    margin-top:20px;
+}
+#content #person{
+    width: 230px;
+    float: right;
+    font-size:10px;
+    line-height: 25px;
+    margin-top: 130px;
+    margin-right:80px;
+    padding:20px;
+    /*text-align:center;*/
+
+}
+#person .intro1{
+    display:none;
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+#person .intro2{
+    display: block;
+    width: 80px;
+    height: 30px;
+    background:darkgreen;
+    float: left;
+    text-align: center;
+    line-height:30px;
+}
+#skill{
+    width: 60%;
+    float: right;
+    background:yellow;
+
 }
