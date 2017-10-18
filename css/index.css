@@ -266,23 +266,73 @@
 #skill{
     width: 60%;
     float: right;
-    background:pink;
+    background:gainsboro;
 
 
 }
-#skill #skill_contain{
+#skill .skill_contain{
     width: 100%;
     overflow: hidden;
 }
 #skill .skill_spect{
     width: 100%;
     height:150px;
+    /*border:solid 1px darkgreen;*/
     background:yellow;
-    margin:40px 30px;
+    margin:20px 30px;
 }
 .skill_spect .circle{
     display: block;
     width: 150px;
     height: 150px;
     background: orange;
+    float: left;
+    position: relative;
+}
+.circle .percent{
+    display: block;
+    width: 30px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-size:10px;
+    color: darkgreen;
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+.circle h7{
+    color: darkred;
+}
+.skill_spect .skill_tree{
+    width: 200px;
+    height: 30px;
+    margin-top:7px;
+    background:green;
+    float: left;
+    font-size: 13px;
+    overflow: hidden;
+    /*float: right;*/
+}
+.skill_spect .tree_one{
+    width: 70%;
+    height: 10px;
+    background: darkgrey;
+    float: left;
+    /*overflow: hidden;*/
+}
+.tree_one #tree_one_tt{
+    width:90%;
+    height: 10px;
+    background:darkred;
+}
+.tree_one #tree_one_dd{
+    width:90%;
+    height: 10px;
+    background:darkred;
+}
+.tree_one #tree_one_cc{
+    width:85%;
+    height: 10px;
+    background:darkred;
 }
