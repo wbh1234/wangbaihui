@@ -157,6 +157,7 @@
     line-height:45px;
     float: left;
 
+
 }
 .content_word .htll{
     display: inline-block;
@@ -344,8 +345,59 @@
     background:gainsboro;
     border-bottom: solid 2px darkgreen;
 
-
 }
+#item #item_class{
+    background: yellow;
+    width: 100%;
+    /*height: 200px;*/
+    overflow: hidden;
+    position: relative;
+}
+#item_class #prev2, #item_class #next2{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background:#15C6FF;
+    text-align: center;
+    line-height:35px;
+    color: white;
+}
+#item_class #prev2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+#item_class #next2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#item_introduce{
+    width: 2300px;
+}
+#item_introduce li{
+    margin:5px 8px;
+    float: left;
+    display: inline-block;
+    width: 200px;
+    height: 320px;
+    overflow: hidden;
+}
+#item_introduce img{
+    width: 100%;
+}
+#item_introduce span{
+    display:inline-block;
+    width: 200px;
+    height: 30px;
+    font-size:14px;
+    color:deepskyblue;
+    text-align: center;
+    background:pink;
+}
+
+
+
 #contact_me{
      width: 60%;
      float: right;
