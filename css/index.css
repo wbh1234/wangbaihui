@@ -36,7 +36,7 @@
 
 }
 #background_list .selected{
-    background:darkred;
+    background: #21c2de;
 }
 #background_sorrn{
     position: absolute;
@@ -49,9 +49,9 @@
     width: 35px;
     border-radius: 5px;
     height: 35px;
-    background:darkred;
+    background:#21c2de;
     text-align: center;
-    color:gray;
+    color:white;
     line-height:35px;
     cursor: pointer;
 }
@@ -63,8 +63,9 @@
 }
 #nav{
     z-index:3;
-    background:darkgreen;
-    border:solid 1px darkgreen;
+    background:#21c2de;
+    border:solid 1px #21c2de;
+    color: #ffffff;
     border-radius: 5px;
     position:fixed;
     width: 40%;
@@ -79,25 +80,15 @@
     height:50px;
     text-align: center;
     line-height: 50px;
-    background:darkgreen;
+    background:#21c2de;
 }
 #nav #logol_two{
     float: left;
     width:10%;
     margin-top:10px;
-    border-radius:5px;
-    border:solid 1px darkgrey;
+    font-size: 20px;
     height: 30px;
-    background:darkred;
     cursor: pointer;
-}
-#nav .menu{
-    display: block;
-    margin-top:6px;
-    margin-left:8px;
-    margin-right:8px;
-    height: 2px;
-    background:darkgrey;
 }
 #intro{
     width: 40%;
@@ -117,11 +108,11 @@
     width: 300px;
     height:180px;
     font-size: 35px;
-    color:darkgreen;
+    color:white;
     text-align: center;
     line-height: 190px;
-    border-bottom: solid 5px darkred;
-    border-right: solid 5px darkred;
+    border-bottom: solid 5px #21c2de;
+    border-right: solid 5px #21c2de;
     /*border: solid 3px darkgrey;*/
     position:absolute;
     bottom: 30px;
@@ -133,7 +124,7 @@
     float: right;
     width: 60%;
     height:50px;
-    background:darkgreen;
+    background:#21c2de;
 }
 #intro2 .item{
     display: inline-block;
@@ -142,7 +133,8 @@
     height:50px;
     text-align: center;
     line-height: 50px;
-    cursor: pointer;;
+    cursor: pointer;
+    color: #ffffff;
 }
 
 #content{
@@ -338,6 +330,9 @@
     height: 10px;
     background:darkred;
 }
+
+
+
 #item{
     z-index: 5;
     width: 60%;
