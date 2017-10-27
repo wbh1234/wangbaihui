@@ -319,16 +319,49 @@
     width:90%;
     height: 10px;
     background:darkred;
+    -webkit-animation:xx 2s linear reverse;
+    -o-animation:xx 2s linear reverse;
+    animation: xx 2s linear reverse;
+}
+@keyframes xx{
+    from{
+
+    }
+    to{
+        width:0;
+    }
 }
 .tree_one #tree_one_dd{
     width:90%;
     height: 10px;
     background:darkred;
+    -webkit-animation:xx 2s linear reverse;
+    -o-animation:xx 2s linear reverse;
+    animation: xx 2s linear reverse;
+}
+@keyframes xx{
+    from{
+
+    }
+    to{
+        width:0;
+    }
 }
 .tree_one #tree_one_cc{
-    width:85%;
+    width:65%;
     height: 10px;
     background:darkred;
+    -webkit-animation:xx 2s linear reverse;
+    -o-animation:xx 2s linear reverse;
+    animation: xx 2s linear reverse;
+}
+@keyframes xx{
+    from{
+
+    }
+    to{
+        width:0;
+    }
 }
 
 
