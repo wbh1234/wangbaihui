@@ -1,8 +1,17 @@
 #background{
     z-index:2;
+    position:relative;
+    background:pink;
+}
+#background{
     width: 100%;
-    height:483px;
-    position: relative;
+    height: 100%;
+    background:red;
+    overflow: hidden;
+}
+#background_img{
+    width: 100%;
+    height: 100%;
 }
 #background_img img{
     width: 100%;
@@ -222,7 +231,6 @@
     background:gainsboro;
     padding-bottom:80px;
     border-bottom: solid 2px darkgreen;
-
 }
 #services_side{
     width:100%;
@@ -315,7 +323,27 @@
     float: left;
     /*overflow: hidden;*/
 }
-.tree_one #tree_one_tt{
+.tree_one .tree_one_tt{
+    width:90%;
+    height: 10px;
+    background:darkred;
+    -webkit-animation:xx 2s linear reverse;
+    -o-animation:xx 2s linear reverse;
+    animation: xx 2s linear reverse;
+    -webkit-animation-timing-function:ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+@keyframes xx{
+    from{
+
+    }
+    to{
+        width:0;
+    }
+}
+.tree_one .tree_one_dd{
     width:90%;
     height: 10px;
     background:darkred;
@@ -331,23 +359,7 @@
         width:0;
     }
 }
-.tree_one #tree_one_dd{
-    width:90%;
-    height: 10px;
-    background:darkred;
-    -webkit-animation:xx 2s linear reverse;
-    -o-animation:xx 2s linear reverse;
-    animation: xx 2s linear reverse;
-}
-@keyframes xx{
-    from{
-
-    }
-    to{
-        width:0;
-    }
-}
-.tree_one #tree_one_cc{
+.tree_one .tree_one_cc{
     width:65%;
     height: 10px;
     background:darkred;
@@ -498,6 +510,9 @@
     color: darkgrey;
 
 }
+#suggestion #frame:focus{
+    background:pink;
+}
 #suggestion #sub{
     font-size:10px;
     color: darkgrey;
@@ -532,3 +547,12 @@
     background:url("../img/timg.jpg") center no-repeat;
     background-size: contain;
 }
+
+/*@media(max-width:1039px){*/
+    /*#intro,#intro2{*/
+        /*display:none;*/
+    /*}*/
+    /*#contend,#services,#skill,#item,#contact_me,#regiter{*/
+        /*width: 100px;*/
+    /*}*/
+/*}*/
