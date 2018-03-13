@@ -10,6 +10,19 @@ var oPrev = document.getElementById("prev");
 var oNext = document.getElementById("next");
 var nowIndex = 0;//全局变量，保存当前显示的图片的索引
 var timer;
+
+var Top= document.getElementById("top");
+Top.onclick = function(){
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    timer = setInterval(function () {
+        window.scrollTo(0, scrollTop-=15);
+        if(scrollTop <= 0){
+            clearInterval(timer());
+        }
+    }, 30);
+};
+
+
 for(var i=0; i<aLi.length; i++){
     aLi[i].index = i;//给每个li对象自定义属性，保存住当时的i的值
     /*
@@ -66,3 +79,5 @@ function changeImg(){
     aLi[nowIndex].className = "selected";
     aImg[nowIndex].className = "selected";
 }
+
+var Intro2 = document.getElementById("intro2");
