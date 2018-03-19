@@ -80,4 +80,20 @@ function changeImg(){
     aImg[nowIndex].className = "selected";
 }
 
-var Intro2 = document.getElementById("intro2");
+window.onload =
+    function(){
+    var oIntro2 = document.getElementById('intro2');
+    H = 0,
+    Y = oIntro2
+    while (Y) {H += Y.offsetTop; Y = Y.offsetParent}
+    window.onscroll = function()
+        {
+            var s = document.body.scrollTop || document.documentElement.scrollTop
+            if(s>H){
+                oIntro2.style = "position:fixed;top:0;right:0;"
+
+             }else{
+                oIntro2.style=""
+             }
+        }
+    }
