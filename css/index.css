@@ -135,7 +135,7 @@
     height:50px;
     background:#21c2de;
 }
-#intro2 .item{
+#intro2 .item1,.item2,.item3,.item4,.item5,.item6{
     display: inline-block;
     width: 19%;
     margin-left:2px;

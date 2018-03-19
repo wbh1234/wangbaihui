@@ -97,3 +97,10 @@ window.onload =
              }
         }
     }
+$.scrollto = function(item2){
+        $("item2").click(function(){
+            $('item2').animate({
+                scrollTop:$(services).offset().top
+            },50);
+        })
+}
