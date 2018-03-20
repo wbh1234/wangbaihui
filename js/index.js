@@ -80,8 +80,7 @@ function changeImg(){
     aImg[nowIndex].className = "selected";
 }
 
-window.onload =
-    function(){
+window.onload = function(){
     var oIntro2 = document.getElementById('intro2');
     H = 0,
     Y = oIntro2
@@ -97,10 +96,4 @@ window.onload =
              }
         }
     }
-$.scrollto = function(item2){
-        $("item2").click(function(){
-            $('item2').animate({
-                scrollTop:$(services).offset().top
-            },50);
-        })
-}
+
