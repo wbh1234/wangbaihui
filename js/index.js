@@ -95,5 +95,6 @@ window.onload = function(){
                 oIntro2.style=""
              }
         }
-    }
+    };
+
 
