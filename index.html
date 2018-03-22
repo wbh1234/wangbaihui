@@ -18,6 +18,7 @@
             <img src="img/bg5.jpeg" alt="" class="">
         </div>
         <span id="background_word">
+            You are young And You can be anyone, You want to be
         </span>
         <ul id="background_list">
             <li class="selected"></li>
@@ -292,28 +293,54 @@
 
     <script src="js/style.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/typing.js"></script>
+    <!--<script src="js/typing.js"></script>-->
+    <script src="js/typeWriter.js"></script>
     <script src="js/pacture.js"></script>
+    <script src="js/sidePacture.js"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
-            $(".item1").on("click",function(){
+            $("#item1").on("click",function(){
                 $("html,body").animate({scrollTop:$(content).offset().top},70)
             });
-            $(".item2").on("click", function(){
+            $("#item2").on("click", function(){
                 $("html,body").animate({scrollTop:$(services).offset().top},70);
             });
-            $(".item3").on("click",function(){
+            $("#item3").on("click",function(){
                 $("html,body").animate({scrollTop:$(skill).offset().top},70);
             });
-            $(".item4").on("click",function(){
+            $("#item4").on("click",function(){
                 $("html,body").animate({scrollTop:$(item).offset().top},70);
             });
-            $(".item5").on("click",function(){
+            $("#item5").on("click",function(){
                 $("html,body").animate({scrollTop:$(item).offset().top},70);
-            })
+            });
 
-        })
+        });
+        objt = setInterval(function(){
+            var h = $(document).scrollTop();
+            if(h==0|| h< 1150 ){
+                one.style.display='block';
+                two.style.display='none';
+                three.style.display='none';
+                four.style.display='none';
+            }else if(h==1150 || h<1610){
+                one.style.display ='none';
+                two.style.display='block';
+                three.style.display='none';
+                four.style.display='none';
+            }else if(h ==1610 ||h<2102){
+                one.style.display='none';
+                two.style.display='none';
+                three.style.display='block';
+                four.style.display='none';
+            }else{
+                one.style.display='none';
+                two.style.display='none';
+                three.style.display='none';
+                four.style.display='block';
+            }
+        },50);
         var oItem1 = document.getElementById("item1");
         var oItem2 = document.getElementById("item2");
         var oItem3 = document.getElementById("item3");
@@ -322,33 +349,51 @@
 
         oItem1.onmouseover = function(){
             oItem1.style.color="red";
+            oItem1.style.fontSize ="20px";
         }
         oItem1.onmouseout = function(){
             oItem1.style.color="white";
+            oItem1.style.fontSize="16px";
         }
         oItem2.onmouseover = function(){
             oItem2.style.color="red";
+            oItem2.style.fontSize ="20px";
+
         }
         oItem2.onmouseout = function(){
             oItem2.style.color="white";
+            oItem2.style.fontSize="16px";
+
         }
         oItem3.onmouseover = function(){
             oItem3.style.color="red";
+            oItem3.style.fontSize ="20px";
+
         }
         oItem3.onmouseout = function(){
             oItem3.style.color="white";
+            oItem3.style.fontSize="16px";
+
         }
         oItem4.onmouseover = function(){
             oItem4.style.color="red";
+            oItem4.style.fontSize ="20px";
+
         }
         oItem4.onmouseout = function(){
             oItem4.style.color="white";
+            oItem4.style.fontSize="16px";
+
         }
         oItem5.onmouseover = function(){
             oItem5.style.color="red";
+            oItem5.style.fontSize ="20px";
+
         }
         oItem5.onmouseout = function(){
             oItem5.style.color="white";
+            oItem5.style.fontSize="16px";
+
         }
 
     </script>

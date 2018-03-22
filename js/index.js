@@ -80,7 +80,7 @@ function changeImg(){
     aImg[nowIndex].className = "selected";
 }
 
-window.onload = function(){
+function topfix(){
     var oIntro2 = document.getElementById('intro2');
     H = 0,
     Y = oIntro2
@@ -95,6 +95,9 @@ window.onload = function(){
                 oIntro2.style=""
              }
         }
+
     };
+    topfix();
+
 
 

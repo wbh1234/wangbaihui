@@ -1,7 +1,7 @@
 /**
  * Created by ASUS on 2018/3/20.
  */
-var  str = 'You are young And You can be anyone, You want to be pu';
+var  str = 'You are young And You can be anyone, You want to be ';
 var m=0;
 var flashing;
 var temp=[];
@@ -11,7 +11,8 @@ function typing(){
         backgroundWord.innerHTML = str.slice(0, m++) + '_';
         setTimeout('typing()', 250);
     }else{
-        backgroundWord.innerHTML = str;
+        // backgroundWord.innerHTML = str;
+        m=0;
     }
     temp= backgroundWord.innerHTML;
 }
