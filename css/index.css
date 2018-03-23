@@ -151,7 +151,8 @@
 #content{
     width: 60%;
     float: right;
-    background:gainsboro;
+    background:url("../img/back.jpg") no-repeat;
+    background-size: cover;
     border-bottom:solid 2px darkgreen;
     padding-bottom:30px;
 
@@ -198,8 +199,13 @@
 #content #person{
     width: 400px;
     float: right;
-    background: red;
-    font-size:20px;
+    /*background: red;*/
+    /*color: white;*/
+    color: #15c6ff;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(21, 198, 255)), to(rgb(30, 19, 51)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:15px;
     line-height: 25px;
     margin-top: 130px;
     margin-right:100px;
@@ -231,13 +237,14 @@
     z-index: 5;
     width: 60%;
     float: right;
-    background:gainsboro;
+    background:url("../img/back2.jpg")no-repeat;
+    background-size: cover;
     padding-bottom:80px;
     border-bottom: solid 2px darkgreen;
 }
 #services_side{
     width:100%;
-    background:gainsboro;
+    /*background:gainsboro;*/
     overflow: hidden;
 
 
