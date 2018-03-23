@@ -167,7 +167,7 @@
     display: inline-block;
     margin-top:6px;
     margin-left:6px;
-    color: #2973a9;
+    color: #21c2de;
     width:120px;
     background: #e18e2f;
 }
@@ -177,8 +177,8 @@
     margin-left:110px;
     border-top:solid 8px #e18e2f;
     border-right:solid 8px #e18e2f;
-    border-left:solid 8px gainsboro;
-    border-bottom:solid 8px gainsboro;
+    border-left:solid 8px transparent;
+    border-bottom:solid 8px transparent;
 }
 .content_word h1{
     display: block;
@@ -213,26 +213,6 @@
     /*text-align:center;*/
 
 }
-#person .intro1{
-    display:none;
-    width: 30px;
-    height: 30px;
-    background: darkred;
-    float: left;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
-}
-#person .intro2{
-    display: block;
-    width: 80px;
-    height: 30px;
-    background:darkgreen;
-    float: left;
-    text-align: center;
-    line-height:30px;
-    cursor: pointer;
-}
 #services{
     z-index: 5;
     width: 60%;
@@ -255,13 +235,13 @@
     height: 200px;
     margin-top: 40px;
     margin-left:20px;
-    background:darkgreen;
+    background: #f3b3c7;
     float: left;
 }
 .side .title{
     height:40px;
-    background:darkred;
-    color:darkgrey;
+    background: #d6bcea;
+    color:white;
     text-align: center;
     line-height: 40px;
 }
@@ -281,7 +261,8 @@
     z-index: 5;
     width: 60%;
     float: right;
-    background:gainsboro;
+    background:url("../img/back4.jpeg") no-repeat;
+    background-size: cover;
     border-bottom: solid 2px darkgreen;
 
 
@@ -293,7 +274,7 @@
 #skill .skill_spect{
     width: 100%;
     height:150px;
-    margin:20px 30px;
+    margin:20px 60px;
 }
 .skill_spect .circle{
     display: block;
@@ -302,41 +283,30 @@
     float: left;
     position: relative;
 }
-.circle .percent{
-    display: block;
-    width: 30px;
-    height: 130px;
-    text-align: center;
-    line-height: 130px;
-    font-size:10px;
-    color: darkgreen;
-    position: absolute;
-    top: 0;
-    left: 35%;
-}
 .circle h7{
-    color: darkred;
+    color: #21c2de;
 }
 .skill_spect .skill_tree{
-    width: 200px;
+    width: 100px;
     height: 30px;
     margin-top:7px;
     float: left;
     font-size: 13px;
+    color:white;
     overflow: hidden;
     /*float: right;*/
 }
 .skill_spect .tree_one{
     width: 70%;
     height: 10px;
-    background: darkgrey;
+    background:#21c2de;
     float: left;
     /*overflow: hidden;*/
 }
 .tree_one .tree_one_tt{
     width:90%;
     height: 10px;
-    background:darkred;
+    background:red;
     -webkit-animation:xx 2s linear reverse;
     -o-animation:xx 2s linear reverse;
     animation: xx 2s linear reverse;
@@ -356,7 +326,7 @@
 .tree_one .tree_one_dd{
     width:90%;
     height: 10px;
-    background:darkred;
+    background:red;
     -webkit-animation:xx 2s linear reverse;
     -o-animation:xx 2s linear reverse;
     animation: xx 2s linear reverse;
@@ -372,7 +342,7 @@
 .tree_one .tree_one_cc{
     width:65%;
     height: 10px;
-    background:darkred;
+    background:red;
     -webkit-animation:xx 2s linear reverse;
     -o-animation:xx 2s linear reverse;
     animation: xx 2s linear reverse;

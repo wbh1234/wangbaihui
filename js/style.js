@@ -1,46 +1,99 @@
-window.onload = function() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    var x = canvas.width / 2;
-    var y =canvas.height / 2;
-    circle(ctx,x,y);
-    var canvas1 = document.getElementById("myCanvas");
-    var e=3.1;
-    draw(e,canvas1);
+let Progress = function(init){
+    this.init(init)
 };
-var canvas2 =document.getElementById("myCanvas2");
-var ctx = canvas2.getContext("2d");
-var x =canvas2.width /2;
-var y =canvas2.width /2;
-circle(ctx,x,y);
-var canvas1 = document.getElementById("myCanvas2");
-var e=2.7;
-draw(e,canvas1);
+Progress.prototype= {
+    init:function (init) {
 
-function circle(ctx,x,y){
-    var radius =50;
-    var startAngle = 1 * Math.PI;
-    var endAngle = 4* Math.PI;
-    var counterClockwise = false;
-    ctx.beginPath();
-    ctx.arc(x,y,radius,startAngle,endAngle,counterClockwise);
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = "darkgray";
-    ctx.stroke();
+        this.el = init.el;//元素ID
 
-}
-function draw(e,canvas1){
-    var ctx1 = canvas1.getContext("2d");
-    var x1 = canvas1.width / 2;
-    var y1 =canvas1.height / 2;
-    var radius1 =50;
-    var startAngle1 = 1.5 * Math.PI;
-    var endAngle1 = e* Math.PI;
-    var counterClockwise1 = false;
-    ctx1.beginPath();
-    ctx1.arc(x1,y1,radius1,startAngle1,endAngle1,counterClockwise1);
-    ctx1.lineWidth = 10;
-    ctx1.strokeStyle = "darkgreen";
-    ctx1.stroke();
+        let cvsElement = document.getElementById(this.el),//获取元素
+            ctx=cvsElement.getContext("2d"),//获取画笔
+            width = cvsElement.width,//元素宽度
+            height=cvsElement.height,//元素高度
+            degActive=0,//动态线条
+            timer=null;//定时器
 
+        //停止时的角度
+        init.deg>0&&init.deg<=100?
+            this.deg = init.deg:this.deg = 100;
+
+        //线宽
+        init.lineWidth !== undefined?
+            this.lineWidth = init.lineWidth : this.lineWidth =20;
+
+        //判断宽高较小者
+        this.wh = width>height?height:width;
+
+        //设置圆的半径，默认为宽高较小者
+        init.circleRadius>0&&init.circleRadius<=this.wh/2-this.lineWidth/2?
+            this.circleRadius = init.circleRadius:this.circleRadius = this.wh/2-this.lineWidth/2;
+
+        //绘制线的背景颜色
+        init.lineBgColor !==undefined?
+            this.lineBgColor = init.lineBgColor:this.lineBgColor='#ccc';
+
+        //绘制线的颜色
+        init.lineColor !==undefined?
+            this.lineColor = init.lineColor:this.lineColor='#009ee5';
+
+        //绘制文字颜色
+        init.textColor !==undefined?
+            this.textColor = init.textColor:this.textColor='#009ee5';
+
+        //绘制文字大小
+        init.fontSize !==undefined?
+            this.fontSize = init.fontSize:this.fontSize=parseInt(this.circleRadius/2);
+
+        //执行时间
+        this.timer = init.timer;
+
+        //清除锯齿
+        if (window.devicePixelRatio) {
+            cvsElement.style.width = width + "px";
+            cvsElement.style.height = height + "px";
+            cvsElement.height = height * window.devicePixelRatio;
+            cvsElement.width = width * window.devicePixelRatio;
+            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+        }
+
+        //设置线宽
+        ctx.lineWidth=this.lineWidth;
+
+        //启动定时器
+        timer = setInterval(function(){
+            ctx.clearRect(0,0,width,height);//清除画布
+            ctx.beginPath();//开始绘制底圆
+            ctx.arc(width/2,height/2,this.circleRadius,1,8);
+            ctx.strokeStyle=this.lineBgColor;
+            ctx.stroke();
+            ctx.beginPath();//开始绘制动态圆
+            ctx.arc(width/2,height/2,this.circleRadius,-Math.PI/2,degActive*Math.PI/180-Math.PI/2);
+            ctx.strokeStyle=this.lineColor;
+            ctx.stroke();
+            let txt=(parseInt(degActive*100/360)+"%");//获取百分比
+            ctx.font=this.fontSize+"px SimHei";
+            let w=ctx.measureText(txt).width;//获取文本宽度
+            let h=this.fontSize/2;
+            ctx.fillStyle=this.textColor;
+            ctx.fillText(txt,width/2-w/2,height/2+h/2);
+            if(degActive>=this.deg/100*360){//停止定时器
+                clearInterval(timer);
+                timer=null;
+            }
+            degActive++;
+        }.bind(this),this.timer);
+    }
 };
+
+var p2 = new Progress({
+    el: 'myCanvas', //canvas元素id
+    deg: 70, //number、绘制角度、建议0~100
+    timer: 10, //number、绘制时间
+    lineWidth: 10, //number、线宽
+    lineBgColor: '#e2e2e2', //合法的颜色单位，底圆颜色、如：#ccc、rgb()、rgba()
+    lineColor: '#e4393c', //动态圆颜色
+    textColor: '#cff', //文本颜色
+    fontSize: 20, //number字体大小
+    circleRadius: 110 //number圆半径
+});
+p2();
