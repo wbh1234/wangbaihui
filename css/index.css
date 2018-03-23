@@ -278,26 +278,29 @@
 }
 .skill_spect .circle{
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 45%;
+    height: 200px;
+    margin-top: 10px;
     float: left;
     position: relative;
 }
 .circle h7{
-    color: #21c2de;
+    color: #e4393c;
 }
 .skill_spect .skill_tree{
-    width: 100px;
-    height: 30px;
+    width:70%;
+    /*height: 30px;*/
     margin-top:7px;
-    float: left;
+    /*float: left;*/
     font-size: 13px;
-    color:white;
+    color: #1e1333;
     overflow: hidden;
     /*float: right;*/
 }
 .skill_spect .tree_one{
-    width: 70%;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 10px;
     background:#21c2de;
     float: left;

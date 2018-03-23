@@ -87,6 +87,17 @@ Progress.prototype= {
 
 var p2 = new Progress({
     el: 'myCanvas', //canvas元素id
+    deg: 90, //number、绘制角度、建议0~100
+    timer: 10, //number、绘制时间
+    lineWidth: 10, //number、线宽
+    lineBgColor: '#e2e2e2', //合法的颜色单位，底圆颜色、如：#ccc、rgb()、rgba()
+    lineColor: '#e4393c', //动态圆颜色
+    textColor: '#cff', //文本颜色
+    fontSize: 20, //number字体大小
+    circleRadius: 110 //number圆半径
+});
+var p1 = new Progress({
+    el: 'myCanvas1', //canvas元素id
     deg: 70, //number、绘制角度、建议0~100
     timer: 10, //number、绘制时间
     lineWidth: 10, //number、线宽
@@ -96,4 +107,29 @@ var p2 = new Progress({
     fontSize: 20, //number字体大小
     circleRadius: 110 //number圆半径
 });
+var p3 = new Progress({
+    el: 'myCanvas2', //canvas元素id
+    deg: 80, //number、绘制角度、建议0~100
+    timer: 10, //number、绘制时间
+    lineWidth: 10, //number、线宽
+    lineBgColor: '#e2e2e2', //合法的颜色单位，底圆颜色、如：#ccc、rgb()、rgba()
+    lineColor: '#e4393c', //动态圆颜色
+    textColor: '#cff', //文本颜色
+    fontSize: 20, //number字体大小
+    circleRadius: 110 //number圆半径
+});
+var p4 = new Progress({
+    el: 'myCanvas3', //canvas元素id
+    deg: 60, //number、绘制角度、建议0~100
+    timer: 10, //number、绘制时间
+    lineWidth: 10, //number、线宽
+    lineBgColor: '#e2e2e2', //合法的颜色单位，底圆颜色、如：#ccc、rgb()、rgba()
+    lineColor: '#e4393c', //动态圆颜色
+    textColor: '#cff', //文本颜色
+    fontSize: 20, //number字体大小
+    circleRadius: 110 //number圆半径
+});
 p2();
+p1();
+p3();
+p4();
