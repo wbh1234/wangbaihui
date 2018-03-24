@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
     <div id="background">
@@ -35,8 +38,30 @@
     <!--<audio src="music/one.mp3" autoplay controls id="music"></audio>-->
     <div id="nav">
         <div id="logol_one"><b>Welcome To My Personal Website</b></div>
-        <div id="logol_two">
-            <i class="fa fa-list-ul" aria-hidden="true"></i>
+        <main class="cd-main-content">
+            <a href="#0" class="cd-btn cd-modal-trigger">
+                <i class="fa fa-list-ul" aria-hidden="true"></i>
+            </a>
+        </main>
+        <div class="cd-modal">
+            <div class="modal-content">
+                <h1>My Modal Content</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis saepe amet sit fugit rerum, corporis minus vitae officia quaerat incidunt voluptate, blanditiis ea est quibusdam voluptas animi quasi totam magni, commodi praesentium. Possimus quam illo ipsam iste unde totam cupiditate deleniti, impedit assumenda hic eligendi natus tempora dolores quod mollitia ab non sunt eaque adipisci, suscipit quas aliquid officiis beatae. Necessitatibus voluptatibus, perferendis tenetur perspiciatis adipisci nesciunt eum ex fuga commodi iure numquam enim rem ullam labore nisi magni sint voluptatem quos! Eum iure exercitationem voluptates repellendus culpa doloremque laborum animi illum, sint fugit soluta possimus a fuga veritatis molestias corporis placeat illo pariatur dolor reiciendis earum, sapiente omnis. Placeat maiores omnis, porro officia, laborum eos. Fugiat mollitia inventore consequuntur odit eaque, rerum recusandae, eum sint molestiae consequatur culpa deserunt quae aliquid dolor tempora tenetur architecto repellendus enim quasi atque, odio voluptas. Tenetur repellendus explicabo ipsum inventore quia aut eos expedita necessitatibus asperiores blanditiis! Delectus nisi laudantium ipsum! Quasi blanditiis corrupti dicta maiores placeat laboriosam delectus ipsum facere voluptas, magnam voluptatibus, perferendis alias ullam saepe, perspiciatis recusandae voluptates, dolores praesentium?
+                </p>
+            </div> <!-- .modal-content -->
+
+            <a href="#0" class="modal-close">Close</a>
+        </div> <!-- .cd-modal -->
+
+        <div class="cd-transition-layer">
+            <div class="bg-layer"></div>
+        </div>
         </div>
     </div>
     <div id="intro">
@@ -44,6 +69,7 @@
             <img src="img/logol2.jpg" alt="" id="two">
             <img src="img/logol3.jpg" alt="" id="three">
             <img src="img/logol4.jpg" alt="" id="four">
+            <img src="img/logol5.jpg" alt="" id="five">
 
     </div>
     <div id="intro2">
@@ -142,39 +168,6 @@
 
 
             </div>
-            <!--<div class="skill_spect">-->
-                <!--<span class="circle">-->
-                     <!--<canvas id="myCanvas2" width="130" height="130"></canvas>-->
-                    <!--&lt;!&ndash;<h7> BACKSTAGE</h7>&ndash;&gt;-->
-                <!--</span>-->
-                <!--&lt;!&ndash;<div class="skill_tree">&ndash;&gt;-->
-                    <!--&lt;!&ndash;php  90%&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="tree_one">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div class="tree_one_tt"></div>&ndash;&gt;-->
-<!--&lt;!&ndash;&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="skill_tree">&ndash;&gt;-->
-                    <!--&lt;!&ndash;node.js  90%&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="tree_one">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div class="tree_one_dd"></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="skill_tree">&ndash;&gt;-->
-                    <!--&lt;!&ndash;c  85%&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="tree_one">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div class="tree_one_cc"></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--&lt;!&ndash;&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="skill_spect">&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="circle">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<canvas height="122" width="122" style="height:125px; width:125px;"></canvas>&ndash;&gt;-->
-<!--&lt;!&ndash;&ndash;&gt;-->
-                <!--&lt;!&ndash;</span>&ndash;&gt;-->
-
-            <!--</div>-->
         </div>
         </div>
     <div id="item">
@@ -185,53 +178,84 @@
         </div>
 
         <div id="item_class">
-            <span id="prev2"> &lt;</span>
-            <span id="next2"> &gt;</span>
+            <ul id="tabs">
+                <li class="selected">所有</li>
+                <li>仿站</li>
+                <li>Vue</li>
+                <li>游戏</li>
+            </ul>
+            <div id="content_item">
+                <div class="selected">
+                        <ul>
+                            <li>
+                                <a href="星巴克/index.html" class="intem_photo" target="view_window"><img src="img/星巴克.png" alt=""></a>
+                                <span> <a href="星巴克/index.html" target="view_window">仿站星巴克</a> </span>
+                            </li>
+                            <li>
+                                <a href="23_网上商城/index.html" class="intem_photo" target="view_window"><img src="img/taobao.png" alt=""></a>
+                                <span> <a href="23_网上商城/index.html" target="view_window">仿站淘宝</a> </span>
+                            </li>
+                            <li>
+                                <a href="24_放大镜/index.html" class="intem_photo" target="view_window"><img src="img/放大镜.png" alt=""></a>
+                                <span> <a href="24_放大镜/index.html" target="view_window">放大镜</a> </span>
+                            </li>
+                            <li>
+                                <a href="31_旋转的照片墙/index.html" class="intem_photo" target="view_window"><img src="img/旋转照片墙.png" alt=""></a>
+                                <span> <a href="31_旋转的照片墙/index.html">特效</a> </span>
+                            </li>
+                            <li>
+                                <a href="game/index.html" class="intem_photo" target="view_window"><img src="img/game.png" alt=""></a>
+                                <span> <a href="game/index.html" target="view_window">小游戏</a> </span>
+                            </li>
+                            <li>
+                                <a href="http://www.33jieye.com/dist" class="intem_photo" target="view_window"><img src="img/musicyun.png" alt=""></a>
+                                <span> <a href="http://www.33jieyue.com/dist" target="view_window">Vue</a> </span>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="星巴克/index.html" class="intem_photo" target="view_window"><img src="img/星巴克.png" alt=""></a>
+                            <span> <a href="星巴克/index.html" target="view_window">仿站星巴克</a> </span>
+                        </li>
+                        <li>
+                            <a href="23_网上商城/index.html" class="intem_photo" target="view_window"><img src="img/taobao.png" alt=""></a>
+                            <span> <a href="23_网上商城/index.html" target="view_window">仿站淘宝</a> </span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <li>
+                        <a href="game/index.html" class="intem_photo" target="view_window"><img src="img/game.png" alt=""></a>
+                        <span> <a href="game/index.html" target="view_window">小游戏</a> </span>
+                    </li>
 
+                </div>
+                <div>
+                    <li>
+                        <a href="http://www.33jieye.com/dist" class="intem_photo" target="view_window"><img src="img/musicyun.png" alt=""></a>
+                        <span> <a href="http://www.33jieyue.com/dist" target="view_window">Vue</a> </span>
+                    </li>
 
-            <div id="item_introduce">
-                <ul>
-                    <li>
-                        <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                        <span> <a href="#">仿站星巴克</a> </span>
-                    </li>
-                    <li>
-                        <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                        <span> <a href="#">仿站淘宝</a> </span>
-                    </li>
-                    <li>
-                    <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                    <span> <a href="#">仿站</a> </span>
-                    </li>
-                    <li>
-                    <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                    <span> <a href="#">仿站</a> </span>
-                    </li>
-                    <li>
-                    <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                    <span> <a href="#">仿站</a> </span>
-                    </li>
-                    <li>
-                    <a href="#" class="intem_photo"></a><img src="img/星巴克.png" alt="">
-                    <span> <a href="#">仿站</a> </span>
-                </li>
-                </ul>
+                </div>
+
             </div>
-
-
-
-
         </div>
     </div>
     <div id="contact_me">
-      <div id="find_me">
-          <h4>Fine me</h4>
-          <span></span>
+        <div class="content_word">
+            <span class="htll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact me</span>
+            <span class="htll2"> </span>
+            <h1>&nbsp;&nbsp;The Way</h1>
+        </div>
+
+        <div id="find_me">
           <ul id="content_logol">
-              <li>
+              <li id="qq1">
                   <i class="fa fa-qq fa-stack" aria-hidden="true"></i>
               </li>
-              <li>
+              <li id="weixin1">
                   <i class="fa  fa-weixin fa-stack" aria-hidden="true"></i>
               </li>
               <a href="http://weibo.com/u/5812589770/home?wvr=5">
@@ -246,34 +270,33 @@
               </li>
               </a>
           </ul>
-      </div>
+
+        </div>
         <div id="contact_info">
-            <h4>Contant info</h4>
-            <span></span>
             <a href="#">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 18249214675
             </a>
             <br>
+            <br>
+
             <a href="#">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 18249214675@163.com
             </a>
+            <br>
+            <br>
             <a href="#">
                 <i class="fa fa-bath" aria-hidden="true"></i>
                 黑龙江哈尔滨黑龙江大学
             </a>
         </div>
-
-        <div id="suggestion">
-            <h4>您的意见：</h4>
-            <span></span>
-            <input type="text" id="frame">
-            <form action="" id="sub">
-                <input type="submit" value="提交">
-            </form>
-
+        <div id="myimg">
+        <img src="img/qq.jpg" alt="" id="qq">
+        <img src="img/weixin.png" alt="" id="weixin">
         </div>
+
+
     </div>
     <div id="register">
         <div id="register_text">
@@ -288,10 +311,13 @@
 
     <script src="js/style.js"></script>
     <script src="js/index.js"></script>
-    <!--<script src="js/typing.js"></script>-->
+    <script src="js/typing.js"></script>
     <script src="js/typeWriter.js"></script>
     <script src="js/pacture.js"></script>
     <script src="js/sidePacture.js"></script>
+    <script src="js/selection.js "></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
@@ -308,7 +334,7 @@
                 $("html,body").animate({scrollTop:$(item).offset().top},70);
             });
             $("#item5").on("click",function(){
-                $("html,body").animate({scrollTop:$(item).offset().top},70);
+                $("html,body").animate({scrollTop:$(contact_me).offset().top},70);
             });
 
         });
@@ -319,21 +345,34 @@
                 two.style.display='none';
                 three.style.display='none';
                 four.style.display='none';
+                five.style.display='none';
             }else if(h==1150 || h<1610){
                 one.style.display ='none';
                 two.style.display='block';
                 three.style.display='none';
                 four.style.display='none';
+                five.style.display='none';
+
             }else if(h ==1610 ||h<2102){
                 one.style.display='none';
                 two.style.display='none';
                 three.style.display='block';
                 four.style.display='none';
+                five.style.display='none';
+
+            }else if(h== 2102 || h<2870){
+                one.style.display='none';
+                two.style.display='none';
+                three.style.display='none';
+                four.style.display='block';
+                five.style.display='none';
+
             }else{
                 one.style.display='none';
                 two.style.display='none';
                 three.style.display='none';
                 four.style.display='block';
+//                five.style.display='block';
             }
         },50);
         var oItem1 = document.getElementById("item1");
@@ -390,6 +429,7 @@
             oItem5.style.fontSize="16px";
 
         }
+
 
     </script>
 

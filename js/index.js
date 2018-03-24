@@ -1,7 +1,7 @@
 /**
  * Created by ASUS on 2017/10/12.
  */
-var oBackground= document.getElementById("background");
+var oBackground = document.getElementById("background");
 var oBackground_list = document.getElementById("background_list");
 var aLi = oBackground_list.getElementsByTagName("li");
 var oBackground_img = document.getElementById("background_img");

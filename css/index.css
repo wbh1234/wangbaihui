@@ -108,7 +108,7 @@
     line-height: 50px;
     background:#21c2de;
 }
-#nav #logol_two{
+#nav .cd-main-content{
     float: left;
     width:10%;
     margin-top:10px;
@@ -365,40 +365,52 @@
     z-index: 5;
     width: 60%;
     float: right;
-    background:gainsboro;
+    background:url("../img/back5.jpg") no-repeat;
+    background-size: cover;
     border-bottom: solid 2px darkgreen;
 
 }
 #item #item_class{
-    background: yellow;
+    /*background: yellow;*/
     width: 100%;
-    /*height: 200px;*/
+    height: 700px;
     overflow: hidden;
     position: relative;
 }
-#item_class #prev2, #item_class #next2{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background:#15C6FF;
+#tabs{
+    /*background:pink;*/
+    width: 100%;
+    /*height:40px;*/
+    overflow: hidden;
+
+}
+#tabs li{
+    background: white;
+    float: left;
+    margin: 10px 5px;
+    width: 60px;
+    height: 30px;
     text-align: center;
-    line-height:35px;
-    color: white;
+    line-height: 30px;
+    cursor: pointer;
+
 }
-#item_class #prev2{
-    position: absolute;
-    top: 50%;
-    left: 0;
+#tabs .selected{
+    background:#e4393c;
 }
-#item_class #next2{
-    position: absolute;
-    top: 50%;
-    right: 0;
+#content_item{
+    width:80%;
+    height:200px;
+    /*background: blue;*/
+    /*display: none;*/
 }
-#item_introduce{
-    width: 2300px;
+#content_item div{
+    display: none;
 }
-#item_introduce li{
+#content_item .selected{
+    display: block;
+}
+#content_item .selected li{
     margin:5px 8px;
     float: left;
     display: inline-block;
@@ -406,109 +418,90 @@
     height: 320px;
     overflow: hidden;
 }
-#item_introduce img{
+#content_item .selected img{
     width: 100%;
+    height:80%;
+    border: solid 3px #e4393c;
 }
-#item_introduce span{
+#content_item .selected span{
     display:inline-block;
     width: 200px;
     height: 30px;
-    font-size:14px;
-    color:deepskyblue;
+    font-size:18px;
+    color:#e4393c;
     text-align: center;
-    background:pink;
 }
 
 
 
 #contact_me{
      width: 60%;
+    height:600px;
      float: right;
-     background:darkgreen;
+     background:white;
+    overflow: hidden;
+    position: relative;
  }
-#contact_me h4{
-    margin:20px 20px 10px;
-    /*border-bottom: solid 2px darkred;*/
-}
-#find_me span{
-    margin-left:20px;
-    display: block;
-    width: 30%;
-    border:solid 1px darkred;
-}
-#find_me{
-    width: 30%;
-    float: left;
-}
 #find_me #content_logol{
     display:block;
     width: 90%;
+    height:60px;
     margin-left:10%;
     float: left;
+
 }
 #find_me #content_logol li{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20%;
+    height: 100%;
     border-radius:50%;
-    margin:10px 3px;
-    background: darkred;
+    margin:40px 3px;
+    background:#e4393c;
     text-align: center;
     color: white;
     float: left;
 }
+#myimg{
+    z-index: 5;
+}
+#qq{
+    width: 130px;
+    height: 180px;
+    margin: 60px 10px 0 110px;
+    float: left;
+    display: none;
+}
+#weixin{
+    width: 130px;
+    height: 180px;
+    float: left;
+    margin: 60px 0 0 40px;
+    display: none;
+}
 #contact_info{
     width: 30%;
-    float: left;
-}
-#contact_info span{
-    margin-left:20px;
-    display: block;
-    width: 30%;
-    border:solid 1px darkred;
+    margin-top:10%;
+    margin-left:10%;
+    /*float: left;*/
+    position:absolute;
+    bottom:20%;
+    left:20%;
+    z-index: 2;
 }
 #contact_info a{
-    font-size: 12px;
+    font-size: 18px;
+    margin-top: 8px;
     margin-left:22px;
-    color: darkgrey;
+    color: red;
 }
-#suggestion{
-    width: 30%;
-    float: left;
-}
-#suggestion span{
-    margin-left:20px;
-    display: block;
-    width: 30%;
-    border:solid 1px darkred;
-}
-#suggestion #frame{
-    width: 80%;
-    height: 70px;
-    margin-top:5px;
-    margin-left:20px;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    border-radius:2px;
-    color: darkgrey;
 
-}
-#suggestion #frame:focus{
-    background:pink;
-}
-#suggestion #sub{
-    font-size:10px;
-    color: darkgrey;
-    margin-top:5px;
-    margin-left:20px;
-}
 #register{
     z-index:1;
     width: 60%;
     float: right;
     height:100px;
     position: relative;
-    background:black;
+    background:#e4393c;
     opacity: 0.8;
 }
 #register_text{

@@ -1,0 +1,858 @@
+#header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+#menu{
+    width: 40%;
+    height: 36px;
+    position: absolute;
+    left: 5%;
+    top: 20px;
+}
+#menu span{
+    font-size: 12px ;
+    margin-left:3px;
+}
+#logo{
+    width: 20%;
+    height: 73px;
+    position: absolute;
+    top:10px;
+    left:45%;
+}
+#logo img{
+    width: 73px;
+}
+#register{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width:15%;
+}
+#register #xing{
+    font-size:16px;
+}
+#register .dr{
+    text-decoration: none;
+    color:#b89f7a;
+    font-size:16px;
+}
+#img #pacture_one,#img #pacture_two{
+    width: 100%;
+    display: block;
+
+}
+#img #pacture_two{
+    display: none;
+}
+#img{
+    position: relative;
+    border:0;
+}
+#img #ad{
+    display: block;
+    width: 40px;
+    text-align:center;
+    font-size: 16px;
+    background: #000;
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+#img #ad_know{
+    color: white;
+    font-size:16px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+#ad_know_ss{
+    color: white;
+    text-decoration:none ;
+}
+#content{
+    width: 100%;
+    background: #0f0f0f;
+}
+
+#content #rewarders{
+    width: 350px;
+    height: 220px;
+
+}
+#star{
+    color: white;
+    font-size:18px;
+}
+#reward{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+
+}
+#reward_star{
+    /*float: right;*/
+    /*/*margin-top:40px;*/
+    position: absolute;
+    top: 10px;
+    right:8px;
+    background: #0f0f0f;
+}
+#reward_star #reward_star_word_1{
+    font-size:25px;
+    color: white;
+}
+#reward_star #reward_star_word_2{
+    font-size:17px;
+    color: white;
+}
+#log{
+    position: absolute;
+    right: 90px;
+    bottom: 40px;
+}
+#log .log_register_word{
+    /*display: block;*/
+    width: 120px;
+    height: 50px;
+    margin-right:10px;
+    background: white;
+    border:4px solid #a98e67;
+    color: #a98e67;
+    font-size:16px;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+}
+#know{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+#log_register_know{
+     color: #a98e67;
+     text-decoration:none ;
+    font-size:16px;
+}
+#log_register_know .dr{
+    color: #a98e67;
+    text-decoration:none ;
+    font-size: 16px;
+}
+#app{
+    width: 100%;
+    height: 220px;
+    background:url("../img/app_bg.gif") repeat scroll center;
+    position: relative;
+}
+#app #app_bg{
+    width: 350px;
+    height: 220px;
+    margin:0 auto;
+    float: left;
+}
+#app_bg #app_phone{
+    width: 350px;
+    height: 220px;
+    background: url("../img/app.png")center bottom no-repeat;
+    background-size: contain;
+
+}
+#erweima{
+    width: 242px;
+    height: 220px;
+    float: left;
+}
+#erweima #erweima_star{
+    width: 130px;
+    height: 130px;
+    background: url("../img/app_erweima.png");
+    background-size: contain;
+}
+#erweima_phone{
+    width: 242px;
+    height: 75px;
+    position: relative;
+}
+#erweima_phone #erweima_load{
+    color: #2d2d2d;
+    border-left:1px solid #000000;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+
+}
+#app #erweima_introduce{
+    position: absolute;
+    right: 0;
+    top:60px;
+    width: 500px;
+}
+#app #erweima_introduce_word{
+    font-size:28px;
+    word-break: break-all;
+}
+#knowmore{
+    position: absolute;
+    right: 420px;
+    bottom: 50px;
+}
+#knowmore #knowmore_something{
+    color: #a98e67;
+    font-size: 16px;
+}
+#banner{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+#banner_word{
+    display: none;
+}
+#summer{
+    overflow:hidden;
+}
+
+#summer_green{
+    width: 50%;
+    float: left;
+}
+#summer_black{
+    width: 50%;
+    float: left;
+}
+#wsg{
+    width: 100%;
+    background:#106e4b;
+    position: relative;
+}
+#wsg_photos1{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    left:10%;
+    overflow: hidden;
+}
+#wsg_photos1 #wsg_img1{
+    width: 49%;
+    height: 125px;
+    background:url("../img/wsg-title.png") center no-repeat ;
+    background-size:contain;
+    float: left;
+    margin-right:2%;
+}
+#wsg_photos1 #wsg_img2{
+    width:49%;
+    height: 150px;
+    background:url("../img/wsg-qrcode.png") center no-repeat;
+    background-size:contain ;
+    float: left;
+}
+#wsg_photos2{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    right:10%;
+    overflow: hidden;
+}
+#wsg_photos2 #wsg_img3{
+    width: 49%;
+    height: 162px;
+    background: url("../img/wsg-cup.png")center no-repeat;
+    background-size:contain;
+    float: left;
+    margin-right:2%;
+}
+#wsg_photos2 #wsg_img4{
+    width: 49%;
+    height: 144px;
+    background:url("../img/wsg-wording.png")center no-repeat;
+    background-size:contain;
+    float: left;
+}
+#watch{
+    width: 100%;
+    overflow: hidden;
+}
+#watch_warpper{
+    width: 1038px;
+    margin:0 auto;
+}
+#web_iwatch{
+    width: 408px;
+    height: 220px;
+    background: url("../img/web-iwatch-cn.png")center no-repeat;
+    background-size:contain;
+    float: left;
+}
+#mobile{
+    display: none;
+    width: 414px;
+    height: 338px;
+    margin:0 auto;
+    background:url("../img/mobile-iwatch-cn.png")center no-repeat;
+    background-size:contain;
+}
+#iwatch_introduce{
+    width: 480px;
+    float: left;
+}
+#iwatch_introduce_word{
+    padding:35px 68px 0 68px;
+    font-size:18px;
+}
+#iwatch_introduce_word #iwatch_know{
+    font-size: 16px;
+    color:#b89f7a;
+}
+#iwatch_introduce_word #iwatch_know_gt{
+    font-size:16px;
+    color: #b89f7a;
+}
+#iwatch_app{
+    width: 150px;
+    height: 207px;
+    float: left;
+}
+#iwatch_app_pacture{
+    width: 130px;
+    height: 130px;
+    background: url("../img/app_qr_20170209.png")center no-repeat;
+    background-size: contain;
+    float: left;
+    margin-left:20px;
+    margin-top:40px;
+
+}
+#iwatch_app_pacture_a{
+    font-size:16px;
+    margin-left:20px;
+}
+#starbucks{
+    width:100%;
+    height: 75px;
+    float: left;
+    display:none;
+    /*display:table-cell;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+}
+#starbucks #starbucks_but{
+    text-align: center;
+}
+#selected{
+    width: 100%;
+}
+#selected_box{
+    background:#f5f5f5;
+    padding:80px 0;
+
+}
+#selected_box_word{
+    font-size:28px;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+#selected_box_word2 {
+    font-size: 18px;
+    text-align: center;
+    color: #8b8b8b;
+    margin-bottom:80px;
+}
+#selected_box #selected_box_two{
+    background:#f5f5f5;
+    margin:0 auto;
+    width:auto;
+    height:auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+#selected_box_two .selected_title{
+    display: inline-block;
+    width: 240px;
+    height: 280px;
+    margin:15px;
+    /*float: left;*/
+    border:1px solid#c3c3c3;
+    position: relative;
+    background:#f5f5f5;
+
+}
+#selected_box_two .selected_title_box{
+    width: 240px;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+
+
+}
+#selected_box_two .selected_title_box2{
+    width: 240px;
+    position: absolute;
+    bottom:30px;
+    left:-1px;
+
+
+}
+#selected_box_two .selected_pacture{
+    width: 240px;
+}
+.selected_title .selected_intro{
+    width: 240px;
+    font-size:18px;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom:15px;
+    color: #000;
+
+}
+.selected_title .selected_intro2{
+    width: 240px;
+    font-size:14px;
+    color: #707175;
+    text-align: center;
+}
+#coffee{
+    width: 100%;
+    height: 608px;
+    background: #000;
+}
+#coffee #warrper_coffee{
+    width: 1170px;
+    height: 608px;
+    margin:0 auto;
+    display: table;
+
+}
+#coffee #warrper_coffee_box{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}
+#coffee #coffee_img{
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+#coffee #coffee_intro {
+    display: table;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+#coffee_intro #intro_word1{
+    color: #a98e67;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-top:30%;
+    margin-bottom:14px;;
+}
+#coffee_intro #intro_word2{
+    font-size:18px;
+    color: #707070;
+}
+#coffee_intro #coffee_intro2{
+    margin-top:30px;
+    margin-bottom: 30%;
+}
+#coffee_intro2 .intro2{
+     display: inline-block;
+     /*height: 100px;*/
+     padding:14px 40px;
+     font-size:14px;
+     margin-right:15px;
+     color: #a98e67;
+     text-align: center;
+     border:2px solid #a98e67;
+ }
+#list{
+    width: 100%;
+    background:#292929;
+}
+#list #warrper_list{
+    width: 1170px;
+    height: 800px;
+    margin:0 auto;
+}
+#list .list_intro1{
+    width: 1170px;
+    padding-top:60px;;
+    height:300px;
+}
+#list .list_intro_one{
+     width: 25%;
+    background: #292929;
+     float: left;
+ }
+.list_intro_one .list_one_word1{
+    display: inline-block;
+
+    font-size:20px;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.item_boss .item{
+    font-size:15px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    display: block;
+    font-weight: 300;
+}
+.list_intro_one #item_erweima{
+    width: 100px;
+}
+.list_intro_one #item_app {
+    display:block;
+    width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 8px 0 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+#list_intro2{
+    position: relative;
+}
+#list_intro2 .item_one{
+    color: #3a3a3a;
+}
+.item_one #item_bug{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+#list_intro2 #item_last{
+    position: absolute;
+    top:2px;
+    right: 5px;
+}
+
+
+
+
+
+
+
+@media(max-width:899px){
+    #logo img{
+        width: 65px;
+        height: 65px;
+    }
+    #register #xing,#register #huo{
+        font-size:12px;
+    }
+    #register .dr{
+        font-size:12px;
+    }
+    #img #ad{
+        top:10%;
+        right:10%;
+    }
+
+}
+@media(max-width: 989px){
+    #img #pacture_one{
+        display: none;
+    }
+    #img #pacture_two{
+        display: block;
+    }
+}
+@media(max-width: 799px){
+    #content .warpper{
+        width: 100%;
+        height: 500px;
+    }
+    /*#content #rewarders{*/
+        /*width: 100%;*/
+    /*}*/
+    #content #reward{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        right: 30%;
+    }
+    #content #reward_star{
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top:220px;
+    }
+    #content #log{
+        width: 76%;
+        position: absolute;
+        left: 12%;
+        right: 12%;
+    }
+    #content #log .log_register_word{
+        width: 100%;
+        margin-top:10px;
+        margin-left:2%;
+        margin-right:2%;
+    }
+    #content #log #log_register_know{
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
+    #know{
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
+    #app{
+        width: 100%;
+    }
+    .warpper_app{
+        width: 100%;
+    }
+    #warpper_app #app_bg{
+        width: 20%;
+        left: 10%;
+        right: 70%;
+
+    }
+    #app_bg #app_phone{
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+
+    }
+    #app #erweima_introduce{
+        width: 70%;
+        position: absolute;
+        top: 10px;
+        left: 20%;
+    }
+    #app #erweima_introduce_word{
+        font-size:18px;
+    }
+    #erweima{
+        display: none;
+    }
+    #knowmore{
+        position: absolute;
+        bottom: 2px;
+        right: 10%;
+    }
+
+
+
+
+}
+@media (max-width: 639px) {
+    #banner{
+        display: none;
+    }
+    #banner_word{
+        display: block;
+    }
+    
+}
+@media (max-width:1170px) {
+    .warpper_app_wsg{
+          width: 100%;
+      }
+    #list #warrper_list{
+        width:100%;
+    }
+    #list .list_intro1{
+        width:100%;
+
+    }
+}
+@media (max-width: 769px) {
+    #summer_green, #summer_black{
+        width: 100%;
+    }
+    .warpper_app_wsg{
+        width: 100%;
+        height: 380px;
+
+    }
+    #wsg #wsg_photos1{
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+
+    }
+    #wsg #wsg_photos2{
+        width: 50%;
+        position: absolute;
+        top:190px;
+        right: 25%;
+        left: 25%;
+    }
+    #list .list_intro_one{
+        width: 100%;
+    }
+    .list_intro_one #item_erweima, .list_intro_one #item_app{
+        display: none;
+    }
+}
+@media(max-width: 334px){
+    #wsg{
+        height: 500px;
+    }
+    #wsg_photos1 #wsg_img1,#wsg_photos2 #wsg_img3{
+        width: 100%;
+        margin-top:0;
+    }
+}
+@media (max-width: 1038px) {
+    #watch_warpper{
+        width: 100%;
+        height: 630px;
+    }
+    #web_iwatch{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    #iwatch_introduce{
+        width: 100%;
+    }
+    #iwatch_introduce #iwatch_introduce_word{
+        padding-top:0;
+        font-size:17px;
+        text-align: center;
+    }
+    #watch #iwatch_app{
+        display: none;
+    }
+    #starbucks{
+        display: block;
+    }
+
+}
+@media (max-width: 566px) {
+    #selected_box_two .selected_title{
+        display: inline-block;
+        width: 137px;
+        height: 220px;
+        margin:15px;
+        /*float: left;*/
+        border:1px solid#c3c3c3;
+        position: relative;
+        background: #f5f5f5;
+
+    }
+    #selected_box_two .selected_title_box{
+        width: 137px;
+        position: absolute;
+        top:-1px;
+        left:-1px;
+
+
+    }
+    #selected_box_two .selected_title_box2{
+        width: 137px;
+        position: absolute;
+        bottom:30px;
+        left:-1px;
+
+
+    }
+    #selected_box_two .selected_pacture{
+        width: 137px;
+    }
+    .selected_title .selected_intro{
+        width:137px;
+        font-size:18px;
+        text-align: center;
+        margin-top:15px;
+        margin-bottom:15px;
+        color: #000;
+
+    }
+    .selected_title .selected_intro2{
+        width:137px;
+        font-size:14px;
+        color: #707175;
+        text-align: center;
+    }
+
+}
+@media(max-width: 1168px){
+    #coffee #warrper_coffee, #coffee #warrper_coffee_box{
+        width:auto;
+
+    }
+    #coffee #coffee_img{
+        width: 50%;
+        text-align: right;
+    }
+
+}
+@media(max-width:990px){
+    #coffee #coffee_intro{
+        width: 240px;
+        z-index:2;
+    }
+    #coffee #warrper_coffee_box{
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+    }
+    #coffee #coffee_img{
+        width: 66%;
+        text-align: right;
+    }
+    #coffee_intro2 .intro2{
+        display: inline-block;
+        width: 80px;
+        margin-top:10px;
+        /*height: 100px;*/
+        padding:14px 40px;
+        font-size:14px;
+        margin-right:15px;
+        color: #a98e67;
+        text-align: center;
+        border:2px solid #a98e67;
+    }
+}
+@media(max-width:765px){
+    #coffee{
+        height:auto;
+    }
+    #coffee #warrper_coffee, #coffee #warrper_coffee_box{
+        width:100%;
+
+    }
+    #coffee #coffee_img{
+        width:100%;
+        text-align:left;
+    }
+    #coffee #coffee_intro{
+        width:100%;
+        z-index:3;
+    }
+    #coffee_intro2 .intro2{
+        width: 80%;
+        margin-right:0;
+    }
+
+}
+@media(max-width:490px) {
+    #coffee_img #coffee_img_o{
+        width: 100%;
+    }
+    #coffee_intro2 .intro2{
+        padding:14px 5px;
+    }
+}
+
+
