@@ -311,7 +311,7 @@
 
     <script src="js/style.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/typing.js"></script>
+    <!--<script src="js/typing.js"></script>-->
     <script src="js/typeWriter.js"></script>
     <script src="js/pacture.js"></script>
     <script src="js/sidePacture.js"></script>
@@ -336,6 +336,19 @@
             $("#item5").on("click",function(){
                 $("html,body").animate({scrollTop:$(contact_me).offset().top},70);
             });
+
+            $("#qq1").on("mouseover", function(){
+                qq.style.display='block';
+            });
+            $("#qq1").on("mouseout", function(){
+                qq.style.display='none';
+            });
+            $("#weixin1").on("mouseover", function(){
+               weixin.style.display='block';
+            });
+            $("#weixin1").on("mouseout", function(){
+                weixin.style.display='none';
+            })
 
         });
         objt = setInterval(function(){
@@ -383,35 +396,35 @@
 
         oItem1.onmouseover = function(){
             oItem1.style.color="red";
-            oItem1.style.fontSize ="20px";
+//            oItem1.style.fontSize ="20px";
         }
         oItem1.onmouseout = function(){
             oItem1.style.color="white";
-            oItem1.style.fontSize="16px";
+//            oItem1.style.fontSize="16px";
         }
         oItem2.onmouseover = function(){
             oItem2.style.color="red";
-            oItem2.style.fontSize ="20px";
+//            oItem2.style.fontSize ="20px";
 
         }
         oItem2.onmouseout = function(){
             oItem2.style.color="white";
-            oItem2.style.fontSize="16px";
+//            oItem2.style.fontSize="16px";
 
         }
         oItem3.onmouseover = function(){
             oItem3.style.color="red";
-            oItem3.style.fontSize ="20px";
+//            oItem3.style.fontSize ="20px";
 
         }
         oItem3.onmouseout = function(){
             oItem3.style.color="white";
-            oItem3.style.fontSize="16px";
+//            oItem3.style.fontSize="16px";
 
         }
         oItem4.onmouseover = function(){
             oItem4.style.color="red";
-            oItem4.style.fontSize ="20px";
+//            oItem4.style.fontSize ="20px";
 
         }
         oItem4.onmouseout = function(){
@@ -421,12 +434,12 @@
         }
         oItem5.onmouseover = function(){
             oItem5.style.color="red";
-            oItem5.style.fontSize ="20px";
+//            oItem5.style.fontSize ="20px";
 
         }
         oItem5.onmouseout = function(){
             oItem5.style.color="white";
-            oItem5.style.fontSize="16px";
+//            oItem5.style.fontSize="16px";
 
         }
 

@@ -129,7 +129,7 @@ var p4 = new Progress({
     fontSize: 20, //number字体大小
     circleRadius: 110 //number圆半径
 });
-p2();
-p1();
-p3();
-p4();
+// p2();
+// p1();
+// p3();
+// p4();
